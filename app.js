@@ -19,10 +19,6 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
-app.get("/pancho", (req, res) => {
-    res.render("pancho");
-})
-
 app.post("/guardar", (req, res) => {
 
     // Obtener datos
@@ -60,28 +56,3 @@ app.post("/guardar", (req, res) => {
 app.listen(port, () => {
     console.log("Servidor corriendo en http://localhost:3000")
 })
-
-
-
-
-
-const mysql = require("mysql2");
-
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "formulario"
-});
-
-connection.connect((error) => {
-
-    if(error){
-        console.log("Error de conexión");
-        return;
-    }
-
-    console.log("Conectado a MySQL");
-});
-
-module.exports = connection;

@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Rivals: Comunidad</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    
+    <h1>Bienvenido a la Comunidad de Marvel Rivals</h1>
+    <p>Rellena el siguiente formulario para ser parte de la selección a nuestro equipo profesional:</p>
+    <form action="/guardar" method="POST">
+        <label for="alias">Aliás:</label>
+        <input type="text" id="alias" name="alias" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="tel">Número de Teléfono:</label>
+        <input type="text" id="tel" name="tel" required>
+
+        <label for="pais">País de Residencia:</label>
+        <input type="text" id="pais" name="pais" required>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>

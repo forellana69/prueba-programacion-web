@@ -12,5 +12,7 @@ npm install mysql2
 
 2. lenguajes utilizados:
 
--Javasecript
--E
+-Javascript
+-HTML
+-CSS
+-Mysql
